@@ -5,6 +5,7 @@
   --circle-gradient-end: #f4e6ff;
   --circle-shadow: rgba(0, 0, 0, 0.2);
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@ body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
+
 .chart-container {
   display: flex;
   height: calc(13 * 100vh / 18);
@@ -27,56 +29,66 @@ body {
   width: 100%;
   box-sizing: border-box;
 }
+
 .left-box {
   flex: 1;
   margin: 0 5px 0 20px;
 }
+
 .left-box .map {
-  height: 1000px;
-  width: 1000px;
-  top: 300px;
-  eft: 25px;
+  height: 700px;
+  width: 700px;
+  top: 100px;
+  left: 25px;
 }
+
 .right-box {
   flex: 1;
   display: flex;
   flex-direction: column;
   margin: 0 50px 0 110px;
 }
+
 .right-box .bar {
   flex: 1;
   margin: 0 0 0 9px;
 }
+
 .right-box .bar h3 {
   font-size: 1rem;
   color: black;
-  margin: 10px 0 4px 0;
+  margin: 80px 130px 20px 9px;
   font-weight: bold;
   text-align: center;
   position: relative;
   top: 40px;
+  /* 向下移动20px，不影响其他元素 */
 }
+
 .right-box .bar .chart {
   height: 265px;
   width: 430px;
   margin: 0 0 0 100px;
 }
+
 .right-box .line {
   flex: 1;
   margin: 0 130px 100px 9px;
 }
-}
+
 .right-box .line h3 {
   font-size: 1rem;
   color: black;
   font-weight: bold;
   text-align: center;
 }
+
 .right-box .line .chart {
   height: 265px;
   width: 430px;
   margin: 0 0 0 100px;
 }
+
 .timeline {
   position: fixed;
   bottom: 0;
@@ -87,6 +99,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .timeline-inner {
   width: 80%;
   position: relative;
@@ -96,6 +109,7 @@ body {
   align-items: center;
   height: 0.5rem;
 }
+
 .timeline-line {
   height: 5px;
   background-color: #b48cd6;
@@ -103,6 +117,7 @@ body {
   position: relative;
   transition: transform 0.3s ease;
 }
+
 .timeline-point {
   position: absolute;
   top: -11px;
@@ -116,6 +131,7 @@ body {
   transition: transform 0.3s ease;
   z-index: 10;
 }
+
 .timeline-year {
   position: absolute;
   top: 20px;
@@ -124,15 +140,19 @@ body {
   font-size: 14px;
   transition: font-size 0.3s ease;
 }
+
 .timeline-point:hover {
   transform: scale(1.5);
 }
-.timeline-point:hover ~ .timeline-line {
+
+.timeline-point:hover~.timeline-line {
   transform: scaleY(1.8);
 }
-.timeline-point:hover + .timeline-year {
+
+.timeline-point:hover+.timeline-year {
   font-size: 20px;
 }
+
 .tit {
   position: fixed;
   top: 0;
