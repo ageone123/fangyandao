@@ -32,9 +32,9 @@ body {
   margin: 0 5px 0 20px;
 }
 .left-box .map {
-  height: 700px;
-  width: 700px;
-  top: 100px;
+  height: 1000px;
+  width: 1000px;
+  top: 300px;
   eft: 25px;
 }
 .right-box {
