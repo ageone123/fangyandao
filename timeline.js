@@ -4,19 +4,19 @@ window.onload = function () {
     const timelineInner = timelineLine.parentElement;
     const lineWidth = timelineLine.offsetWidth;
     const numYears = years.length;
-    const spacingFactor = 1.01;
+    const spacingFactor = 0.8;
     const offset = 100;
 
     for (let i = 0; i < numYears; i++) {
         const point = document.createElement('div');
         point.classList.add('timeline-point');
         const leftOffset = (i / (numYears - 1)) * lineWidth * spacingFactor + offset;
-        point.style.left = `${leftOffset - 12}px`;
+        point.style.left = `${leftOffset + 150}px`;
 
         const yearElement = document.createElement('div');
         yearElement.classList.add('timeline-year');
         yearElement.textContent = years[i];
-        yearElement.style.left = `${leftOffset}px`;
+        yearElement.style.left = `${leftOffset + 160}px`;
 
         timelineInner.appendChild(point);
         timelineInner.appendChild(yearElement);
