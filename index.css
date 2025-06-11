@@ -60,9 +60,6 @@ body {
   margin: 80px 130px 20px 9px;
   font-weight: bold;
   text-align: center;
-  position: relative;
-  top: 40px;
-  /* 向下移动20px，不影响其他元素 */
 }
 
 .right-box .bar .chart {
