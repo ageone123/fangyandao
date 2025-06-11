@@ -4,7 +4,7 @@ window.onload = function () {
     const timelineInner = timelineLine.parentElement;
     const lineWidth = timelineLine.offsetWidth;
     const numYears = years.length;
-    const spacingFactor = 1.02;
+    const spacingFactor = 1.01;
     const offset = 100;
 
     for (let i = 0; i < numYears; i++) {
