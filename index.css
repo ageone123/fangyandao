@@ -32,10 +32,10 @@ body {
   margin: 0 5px 0 20px;
 }
 .left-box .map {
-  height: 570px;
-  width: 650px;
-  top: 18px;
-  left: 25px;
+  height: 700px;
+  width: 700px;
+  top: 100px;
+  eft: 25px;
 }
 .right-box {
   flex: 1;
@@ -53,15 +53,18 @@ body {
   margin: 10px 0 4px 0;
   font-weight: bold;
   text-align: center;
+  position: relative;
+  top: 40px;
 }
 .right-box .bar .chart {
   height: 265px;
   width: 430px;
-  margin: 0 0 0 9px;
+  margin: 0 0 0 100px;
 }
 .right-box .line {
   flex: 1;
-  margin: 0 0 0 9px;
+  margin: 0 130px 100px 9px;
+}
 }
 .right-box .line h3 {
   font-size: 1rem;
@@ -72,7 +75,7 @@ body {
 .right-box .line .chart {
   height: 265px;
   width: 430px;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 100px;
 }
 .timeline {
   position: fixed;
